@@ -1,0 +1,27 @@
+talmud_name_en,candidate_source,candidate_id,candidate_name,bj_terms,syriac_terms,selection_note
+Mavrakhta,chabot,chabot:Mabrakta,Mabrakta,Mavrakhta|Mavrakta|Mabrakhta|Mabrakta,Mabrakta|Mabrakhta|Mbrakta,top score 1.0
+Drokart,hoffmann,hoffmann:Darauqart,Darauqart,Drokart|Durkart|Darokart|Derokart,Darauqart|Daraukart|Daqoqa|Daquqa,top score 1.0
+Derokera,hoffmann,hoffmann:Darauqart,Darauqart,Derokera|Drokera|Durkera,Darauqart|Daquqa,variant of Drokart; matched by hand to the same candidate
+Mashhig,syriaca,2879,Mashmahig,Mashhig|Mashmahig|Mashhag,Mashmahig|Mašmahig|Masmahig,top score 0.889
+Diskarta,chabot,chabot:Dasqarta de Malka,Dasqarta de Malka,Diskarta|Dastagird|Dastagerd|Deskarta,Dasqarta|Dastagerd|Dastagird,matcher missed (length gap); Chabot's table cites the Talmud
+Parzina,chabot,chabot:Bourzan,Bourzan / Burzen,Parzina|Parzinah,Bourzan|Burzan|Burzen,top score 1.0 (b=p not counted: p=b class)
+Hurmiz Ardeshid,syriaca,96,Hormizd Ardashir,Hormiz Ardashir|Hurmiz Ardeshir|Hormizd-Ardashir|Hormizd Ardashir,Hormizd-Ardashir|Hormizd Ardashir|Ahwaz,top score 1.0
+Korkoneya,hoffmann,hoffmann:Karkene,Karkhene,Korkoneya|Kurkunia|Karkunya|Kurkenya,Karkhene|Karkene|Karkhena,top score 1.0
+Mushekanei,hoffmann,hoffmann:Maskin,Maskin / Maskene,Mushkani|Mushkhani|Mushekanei|Mashkanai,Maskin|Maskene|Maskana,top score 0.96
+Bei Torta,syriaca,2758,Beth Urtaye,Be Torta|Bei Torta|Be Turta|Turta,Beth Urtaye|Urtaye,top score 1.0
+Beit Shavor,chabot,chabot:Bth-Sabour,Beth Shabur (Chabot),Be Shapur|Be Shavor|Beth Shapur|Bishapur,Bih-Shapur|Bishapur|Beit Sabour,top score 1.0
+Sakistan,hoffmann,hoffmann:Sagistän,Sagistan / Segestan,Sakistan|Sistan|Sagistan|Seistan,Segestan|Sagistan|Sakastan,top score 0.96
+Kan Nishrayya,syriaca,230,Qenneshre,Kan Nishraya|Kinneshraya|Kan Nishrayya,Qenneshre|Qinnasrin,top score 1.0
+Asporak,hoffmann,hoffmann:Espurgan,Espurgan,Asporak|Asporaka|Aspurak,Espurgan|Ispurgan,top score 0.94
+Pashronya,syriaca,49,Beth Sbirino (Bsorino),Pashronya|Pashrunya|Pashronia,Bsorino|Beth Sbirino,top score 0.92
+Zerokinya,hoffmann,hoffmann:Sirakän,Sirakan,Zerokinya|Zarokinya|Zerukinya,Sirakan|Sirgan,top score 0.96
+Vastanya,syriaca,537,Beth Qustan,Vastanya|Vastania|Wastanya,Beth Qustan|Wastan|Vasthan,top score 0.93
+Bridge of Shabistana,hoffmann,hoffmann:al-SäbustT,al-Sabusti,Shabistana|Shevistana|Gishra de Shabistana,Sabusti|Shabistan,top score 0.94
+Masgariya,syriaca,2973,Masabadhan,Masgariya|Masgaria|Mashgariya,Masabadan|Masabadhan,top score 0.90
+Gerofina,syriaca,2972,Jurjan / Gurgan,Gerofina|Gerufina|Garufina,Gurgan|Jurjan,top score 0.96
+Akra DeAgma,hoffmann,hoffmann:Aghmä dh Beth Zalle,Aghma d-Beth Zalle,Akra de-Agma|Akra deAgma|Agma,Aghma|Agma d-Beth Zalle,hand pick: the matcher scored Pergamum higher; Hoffmann p. 74
+Hagronya,none,,,Hagronya|Hagrunya|Agranum|Agronia,Hagronia|Agranum,no candidate >= 0.86
+Harpanya,none,,,Harpanya|Harpania|Hirpanya,Harpanya|Harpania,no candidate >= 0.86
+Shekhantziv,none,,,Shekhantziv|Shekanzib|Shekhanzib|Shekhan Ziv,Shekanzib|Shakanzib,no candidate >= 0.86
+Pappunya,none,,,Pappunya|Papunya|Pappunia,Papunya|Papunia,no candidate >= 0.86
+Tavakh,hoffmann,hoffmann:Tauk,Tauk (Daquqa),Tavakh|Tavokh|Tewakh,Tauk|Tawuq|Daquqa,hand pick: skeleton too short (tk) for the matcher

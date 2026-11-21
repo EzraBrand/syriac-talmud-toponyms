@@ -1,0 +1,10 @@
+# downloaded data (rebuild with scripts/fetch_syriaca_places.py; text layers: see SOURCES.md)
+sources/syriaca-places-tei/
+sources/*.txt
+# page images and OCR scratch
+work/
+logs/
+out/_*.txt
+__pycache__/
+# raw search-inside snippets from in-copyright books (BJ 1983, Fiey 1993): local only
+data/fts_*.json
