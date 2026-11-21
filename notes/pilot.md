@@ -123,9 +123,50 @@ was read.
 Bedjan, *AMS* II was **not** OCR'd: no surviving candidate needed it. The Acts that
 Hoffmann used for Karkhene and Maskene are not identified with Bedjan pages yet.
 
+## Round 2: BJ's own list of unidentified places (21-Nov-2026)
+
+**The BJ list.** BJ's General Index (pp. 530–546) names the sub-sections of every entry, and
+these show BJ's verdict: "Location" (located), "Already Proposed Location" (BJ weighs earlier
+proposals), "Proposed Location" (BJ proposes), **"Attempts at Identification"** (unidentified
+or disputed), and "(A)" (appendix). Searching the index labels with "search inside" gave 321
+index snippets and 87 entries (`data/bj_entries.csv`, `scripts/build_bj_index.py`). The list
+is **incomplete** (the search returns only short snippets), but it gives BJ's own targets:
+17 places marked "Attempts at Identification" (`data/talmud_bj_targets.csv`; Hebrew forms from
+the BJ headings, checked in the Sefaria Aramaic text).
+
+**Matcher run on the 17** (`out/matches_bj_attempts.csv`, review in
+`data/bj_attempts_review.csv`): 14 have no usable Syriac candidate, 2 are rejected
+(Be Mikse → Beth Moksaye is Moxoene in Armenia; Nohar Poqod → Nahargur needs two
+confusions), and **1 is a lead**:
+
+- **Qartu, קרתויים / קרתויי (Yevamot 16a), = Syriac Qarṭwāyē, ܩܪܛܘܝܐ, the "Kartaw Kurds".**
+  - Syriac side: Chabot p. 423 (synod of Ishoʿyahb I, 585: Kelilishoʿ, bishop "of Beth
+    Tabyatē and of the Kartawayē"); Chabot's table p. 677 ("tribu kurde … à l'est du Petit
+    Zab, au-dessus d'Arbèle"); Hoffmann p. 207 n. 1639 (Assemani, Wright's catalogue, Arabic
+    geographers); Fiey, POCN p. 66 ("Beth Kartwayé … le Nord montagneux de l'Adiabène");
+    Gazetteer records 1034 and 4464.
+  - BJ (pp. 386–387) agrees with Rav Ashi that Qartu ≠ Qardu, but puts the Qartuans "according
+    to Strabo, in southern Persia" (the Κύρτιοι). Jastrow (p. 1428) has Κόρτιοι, "mountaineers
+    of Media". Neither cites the Syriac Qarṭwāyē, and Hoffmann's note and POCN do not cite the
+    Talmud.
+  - What the Syriac adds: a people called Qarṭwāyē (with ṭ; Talmudic ת = one t/ṭ confusion)
+    in northern Adiabene, organised as a diocese by 585, separate from Qardu (Corduene). That
+    supports Rav Ashi's distinction and points to northern Mesopotamia rather than southern Persia.
+  - **Not yet a claim.** Still to check: Obermeyer p. 133, Neubauer p. 429, Fiey *Assyrie
+    chrétienne* I (Kartaw pp. 152–153, 216–217; lending only), Weissbach RE s.v. Κύρτιοι.
+    Caution: Chabot p. 630 equates "Qardewayē" with the Kartawayē, which blurs the very
+    distinction.
+
+**Coverage table** (`out/coverage.csv`, `scripts/build_coverage.py`): 166 Talmudic toponyms
+(149 + the 17 BJ targets) with the BJ entry (found for 97), BJ's status where the index gave
+it (71), the top Syriac candidate with score and rules, and the manual verdict where there is
+one. This is the "systematic" table the project promised; it still has gaps in BJ status.
+
 ## Next steps
 
 - Fiey, *Assyrie chrétienne* III (lending only) and *Sumer* 23 (1967): check the weak leads.
+- Check the Qartu lead: Obermeyer p. 133, Neubauer p. 429, Fiey *AC* I, Weissbach RE.
+- Complete the BJ index (more search terms, or the owner borrows BJ for an hour and reads pp. 530–546).
 - Read BJ's verdicts for the entries whose verdict is "not read" (Diskarta, Papuniya).
 - Add a place/person flag to the Hoffmann register; parse Chabot's table fully.
 - Decide with the owner whether the next step is matching at scale (all 662 toponyms) or

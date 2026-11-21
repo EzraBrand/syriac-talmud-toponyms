@@ -30,11 +30,11 @@ Checked 21-Nov-2026.
 
 | Work | Status | Use |
 |---|---|---|
-| A. Oppenheimer (with B. Isaac and M. Lecker), *Babylonia Judaica in the Talmudic Period* (Wiesbaden 1983) | **checked (search only)**: archive.org [`babyloniajudaica0000oppe`](https://archive.org/details/babyloniajudaica0000oppe), lending library. Its "search inside" (server `ia600806`, `fulltext/inside.php`) returns snippets with page numbers without a loan. Results in `data/fts_bj_*.json`. | The baseline. No list of unidentified places can be downloaded; entries and verdicts were found per toponym (Hebrew forms work well as search terms). BJ uses Hoffmann, Obermeyer, Fiey (*Sumer* 23, 1967) and Nöldeke. |
+| A. Oppenheimer (with B. Isaac and M. Lecker), *Babylonia Judaica in the Talmudic Period* (Wiesbaden 1983) | **checked (search only)**: archive.org [`babyloniajudaica0000oppe`](https://archive.org/details/babyloniajudaica0000oppe), lending library. Its "search inside" (server `ia600806`, `fulltext/inside.php`) returns snippets with page numbers without a loan. Results in `data/fts_bj_*.json`. | The baseline. Its General Index (pp. 530–546) names each entry's sub-sections, including "Attempts at Identification" = unidentified/disputed; searching those labels rebuilds a partial list of entries with BJ's status (`data/bj_entries.csv`). Entries and verdicts were also found per toponym (Hebrew forms work well as search terms). BJ uses Hoffmann, Obermeyer, Fiey (*Sumer* 23, 1967) and Nöldeke. |
 | J. M. Fiey, *Assyrie chrétienne* I–III (Beirut 1965–68) | vol. II **have** text layer (`sources/fiey_assyrie_djvu.txt`, from the open Beth Mardutho copy `assyriechrtienne0003jmfi`); vols. I and III only as lending scans (`assyriechretienn0000fiey`, `assyriechretienn0001fiey`, `bwb_C0-ATP-677_3`) | Vol. II is the north (not Beth Aramaye). **Vol. III (Bēth Garmai, Bēth Aramāyē, Maišān) is the one we need**: lending only. |
 | J. M. Fiey, *Pour un Oriens Christianus Novus* (Beirut/Stuttgart 1993) | **checked (search only)**: lending scan `bwb_T5-DIB-779`; search inside works when called from the item's own archive.org page (server `ia800600`). Results in `data/fts_pocn.json`. | Sees only. Not cited in the Gazetteer records. |
 | J. M. Fiey, "Topographie chrétienne de Mahozé", *Sumer* 23 (1967) | missing | BJ relies on it for the Mahoza area (Mavrakta, Gisra do-Sabistana). |
-| J. Obermeyer (1929) | not on archive.org under that name | BJ discusses his identifications entry by entry. |
+| J. Obermeyer (1929) | not on archive.org under that name; needed for the Qartu lead (p. 133) | BJ discusses his identifications entry by entry. |
 | Neubauer, *La géographie du Talmud* (1868) | not looked for | Cited by Chabot for Mabrakta. |
 | F. Jullien, studies of the historical geography of the Persian Martyr Acts | missing | Exact titles to fix. |
 | A. H. Becker, *The Invention of the Persian Martyr Acts* (2020) | missing | Dating and nature of the Acts. |
@@ -42,3 +42,9 @@ Checked 21-Nov-2026.
 | G. Hoffmann, *Auszüge aus syrischen Akten persischer Märtyrer* (Leipzig 1880) | **have** text layer (`sources/hoffmann_auszuege_djvu.txt`, archive.org `auszgeaussyris00hoff`, Toronto, open) | The classic historical geography of the Acts. Its register (pp. 298 ff.) is parsed into `data/hoffmann_register.csv`. Hoffmann already cites the Talmud for several places (Maskene n. 343, Darauqart n. 2152). Syriac and Hebrew in the OCR are garbled. |
 | J. Obermeyer, *Die Landschaft Babylonien im Zeitalter des Talmuds und des Gaonats* (Frankfurt 1929) | missing (not found on archive.org) | Talmudic geography with Syriac and Arabic evidence. |
 | M. Streck, *Die alte Landschaft Babylonien nach den arabischen Geographen* (1900–01) | checked: several open copies on archive.org (`diealtelandschaf00stre` etc.) | Arabic side; cited by BJ. Not used yet. |
+
+## Dictionaries
+
+| Work | Where | Use |
+|---|---|---|
+| M. Jastrow, *Dictionary of the Targumim, the Talmud Babli and Yerushalmi* (1903) | Sefaria API `/api/words/<word>` (public) | Checked for קרתויים (p. 1428: Κόρτιοι, "mountaineers of Media"). |

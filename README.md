@@ -3,7 +3,7 @@
 A project to identify unidentified or disputed Babylonian toponyms of the
 Babylonian Talmud with East Syriac sources.
 
-Started 21-Nov-2026. Local git only, nothing committed yet.
+Started 21-Nov-2026. Repository: https://github.com/EzraBrand/syriac-talmud-toponyms
 
 ## The idea
 
@@ -48,6 +48,14 @@ Fiey. Until then a row is a *candidate*.
   Aramaye. Hoffmann's register (1880) and Chabot's tables gave the useful hits, and they are
   exactly the sources BJ already used. New evidence would need new Syriac text (OCR of
   Bedjan's Acts), not more matching.
+- **Round 2:** BJ's own index marks 17 places "Attempts at Identification" (unidentified or
+  disputed); list rebuilt from BJ's index (`data/bj_entries.csv`, incomplete). On those 17 the
+  matcher found **one lead: Talmudic Qartu (קרתויים, Yevamot 16a) = Syriac Qarṭwāyē**, a Kurdish
+  people and diocese north of Arbela (Chabot p. 423, synod of 585; Hoffmann n. 1639; Fiey POCN
+  p. 66). BJ puts the Qartuans in southern Persia (Strabo's Κύρτιοι) and cites no Syriac.
+  Not yet checked against Obermeyer, Neubauer and Fiey *Assyrie chrétienne* I, so **not a
+  claim yet**.
+- Coverage table for 166 toponyms: `out/coverage.csv`.
 - BJ itself is on archive.org (lending); its "search inside" works without a loan and was
   used for the BJ check. Fiey's POCN is there too, but not yet searchable from here.
 
@@ -60,7 +68,7 @@ Fiey. Until then a row is a *candidate*.
 | `scripts/` | All code (run with `py -3.13 -I`) |
 | `sources/` | Downloaded data and text layers (large files not in git) |
 | `data/` | Built tables (Syriac places, Talmudic toponyms) |
-| `out/` | Pilot outputs |
+| `out/` | Pilot outputs: `pilot_matches.csv`, `matches_all.csv`, `matches_bj_attempts.csv`, `coverage.csv` |
 | `logs/` | Logs of long jobs |
 | `work/` | Page images and OCR scratch (not in git) |
 
@@ -76,6 +84,9 @@ py -3.13 -I scripts/build_talmud_toponyms.py     # -> data/talmud_toponyms.csv (
 py -3.13 -I scripts/apply_overrides.py           # hand corrections, in place
 py -3.13 -I scripts/match_toponyms.py --top 8    # -> out/matches_all.csv
 py -3.13 -I scripts/build_pilot.py               # -> out/pilot_matches.csv
+py -3.13 -I scripts/build_bj_index.py            # -> data/bj_entries.csv (needs local data/fts_bj_index*.json)
+py -3.13 -I scripts/match_toponyms.py --talmud data/talmud_bj_targets.csv --out out/matches_bj_attempts.csv --top 8 --min-score 0.70
+py -3.13 -I scripts/build_coverage.py            # -> out/coverage.csv
 ```
 
 The text layers in `sources/*.txt` and the BJ search results (`data/fts_*.json`) were

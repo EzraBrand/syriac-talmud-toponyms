@@ -190,8 +190,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--min-score", type=float, default=0.72)
     ap.add_argument("--top", type=int, default=5)
+    ap.add_argument("--talmud", default="data/talmud_toponyms.csv", help="Talmudic toponym list")
+    ap.add_argument("--out", default="out/matches_all.csv")
     a = ap.parse_args()
-    tal = [r for r in csv.DictReader(open(ROOT / "data" / "talmud_toponyms.csv", encoding="utf-8-sig"))]
+    tal = [r for r in csv.DictReader(open(ROOT / a.talmud, encoding="utf-8-sig"))]
     syr = list(csv.DictReader(open(ROOT / "data" / "syriaca_places.csv", encoding="utf-8-sig")))
     # region: the Sasanian core (Mesopotamia, Khuzistan, Media, Adiabene, Fars) = lon 38-62, lat 24-40.
     # Places with no coordinates are kept and flagged "unknown"; places outside are dropped.
@@ -220,6 +222,8 @@ def main():
                     "syriaca_in_region": "unknown"})
     # Hoffmann 1880 register (persons and places mixed; spirant h removed)
     for c in csv.DictReader(open(ROOT / "data" / "hoffmann_register.csv", encoding="utf-8-sig")):
+        if c.get("hoffmann_kind") == "person":
+            continue
         syr.append({"syriaca_id": f"hoffmann:{c['hoffmann_form_clean']}", "syriaca_uri": "", "syriaca_headword": c["hoffmann_form"],
                     "syriaca_names_syr": "", "syriaca_names_other": f"de:{c['hoffmann_form_clean']}", "syriaca_type": "hoffmann-register",
                     "syriaca_lat": "", "syriaca_lon": "",
@@ -289,7 +293,7 @@ def main():
             })
         if i % 20 == 0:
             print(f"{i}/{len(tal)}", flush=True)
-    out = ROOT / "out" / "matches_all.csv"
+    out = ROOT / a.out
     with open(out, "w", encoding="utf-8-sig", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
         w.writeheader()

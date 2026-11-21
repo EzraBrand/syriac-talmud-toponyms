@@ -17,6 +17,11 @@
    crashed: laptop out of memory). Bedjan not needed for any surviving candidate.
 5. **Output** — `out/pilot_matches.csv`, `notes/pilot.md`.
 
+## Round 2 (same day)
+
+- BJ's index gives BJ's own statuses; 17 "Attempts at Identification" entries were matched.
+  One lead: Qartu = Syriac Qarṭwāyē (see notes/pilot.md). Coverage table `out/coverage.csv`.
+
 ## Main finding
 
 All strong matches restate known identifications. The useful Syriac evidence for Talmudic
@@ -32,8 +37,9 @@ B. **New Syriac text first**: OCR Bedjan *AMS* II, IV (Persian martyrs) and the 
    from the Syriac itself (patterns like ܩܪܝܬܐ ܕ… "village of", ܡܕܝܢܬܐ, ܒܝܬ …), and match those
    against the open BJ entries. This is where something new could appear. Roughly 700 pages
    per volume at ~1 page/min/worker (to be timed), in the background, resumable.
-C. **Finish the checks** on the pilot first: Fiey POCN search, BJ verdicts for Diskarta and
-   Papuniya, Fiey *Assyrie chrétienne* III (lending only).
+C. **Finish the checks**: the Qartu lead (Obermeyer p. 133, Neubauer p. 429, Fiey *AC* I),
+   a complete BJ index (a one-hour loan would do it), BJ verdicts for Diskarta and Papuniya,
+   Fiey *Assyrie chrétienne* III (lending only).
 
 ## Open questions
 

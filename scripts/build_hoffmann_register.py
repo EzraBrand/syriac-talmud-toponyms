@@ -30,6 +30,21 @@ for line in reg.splitlines():
     buf = line
 if buf:
     rows.append(buf)
+PERSON = re.compile(r",\s*(?:B|M|P|A|D|Diakon|Bischof|König|Märtyrer|Mönch|Patriarch|Katholikos|Schreiber|Sohn|Tochter|Apostel|Manichäer|Notar|Feldherr|Magier|Mobedh|Mohpat)\b"
+                    r"|\b(?:Sohn|Tochter|bin|bar|ibn|Mar|Mär|Rabban|Mart|König|Märtyrer|Apostel|Schule des|Coenobium des|Kloster des|Congregation des)\b|^(?:H\.|St\.)\s")
+PLACE = re.compile(r"\b(?:Dair|Daira|Dairä|Kloster|Coenobium|Berg|Dorf|Fluss|Gabal|Öebel|Nahr|Tell|Tel|Ribät|Wädl|Wädi|Qasr|Kark\S*|Bet\S*|Beth|B[eä]th?|Mahoz\S*|Aqra|Akra|'Ain|Ain|Dast\S*|Karh|See|Insel|Provinz|Stadt|Burg|Brücke)\b"
+                   r"|(?:äbädh?|äbäd|gerd|kert|qart|gird|än|ene|ija|Tja|stän|istän)$|^al-|^el-|^ed-")
+
+
+def kind(name):
+    """person / place / unknown, from the register wording only (Hoffmann marks B. = Bischof etc.)."""
+    if PERSON.search(name):
+        return "person" if not PLACE.search(name) or re.search(r",\s*(?:B|M|P|A)\b", name) else "unknown"
+    if PLACE.search(name):
+        return "place"
+    return "unknown"
+
+
 out = []
 for r in rows:
     m = re.match(r"^(.*?[^\d\s])\s+((?:\d|n\s*\d|[hU]\s+\d).*)$", r)
@@ -43,10 +58,11 @@ for r in rows:
     # Hoffmann marks spirants as bh gh dh kh ph th; the OCR often gives l' or '' for the h.
     clean = re.sub(r"(?<=[bgdkptBGDKPT])(?:l'|l’|''|'|h)", "", name)
     clean = re.sub(r"\(.*?\)|\[|\]|\?", "", clean).strip()
-    out.append({"hoffmann_form": name, "hoffmann_form_clean": clean, "hoffmann_pages": "; ".join(dict.fromkeys(pages)),
+    out.append({"hoffmann_form": name, "hoffmann_form_clean": clean, "hoffmann_kind": kind(name),
+                "hoffmann_pages": "; ".join(dict.fromkeys(pages)),
                 "hoffmann_notes": "; ".join(dict.fromkeys(notes))})
 with open(ROOT / "data" / "hoffmann_register.csv", "w", encoding="utf-8-sig", newline="") as fh:
-    w = csv.DictWriter(fh, fieldnames=["hoffmann_form", "hoffmann_form_clean", "hoffmann_pages", "hoffmann_notes"])
+    w = csv.DictWriter(fh, fieldnames=["hoffmann_form", "hoffmann_form_clean", "hoffmann_kind", "hoffmann_pages", "hoffmann_notes"])
     w.writeheader()
     w.writerows(out)
 print(f"{len(out)} register entries")
