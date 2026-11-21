@@ -52,9 +52,9 @@ far north.
 
 | Status | n | Toponyms |
 |---|---|---|
-| Restatement of a known identification | 8 | Mavrakhta, Drokart (+ variant Derokera), Mashhig, Diskarta, Hurmiz Ardeshid, Mushekanei, Sakistan |
+| Restatement of a known identification | 9 | Mavrakhta, Drokart (+ variant Derokera), Mashhig, Diskarta, Hurmiz Ardeshid, Mushekanei, Sakistan, Korkoneya (weak; Neubauer 1868) |
 | Rejected (false positive) | 6 | Parzina, Bei Torta, Pashronya, Vastanya, Masgariya, Gerofina |
-| Weak lead (not in BJ or POCN; other Fiey works not checked) | 6 | Korkoneya, Asporak, Zerokinya, Bridge of Shabistana, Akra DeAgma, Tavakh |
+| Weak lead (not in BJ or POCN; other Fiey works not checked) | 5 | Asporak, Zerokinya, Bridge of Shabistana, Akra DeAgma, Tavakh |
 | No Syriac candidate | 4 | Hagronya, Harpanya, Shekhantziv, Pappunya |
 | Not checked / out of scope | 2 | Beit Shavor, Kan Nishrayya |
 
@@ -85,7 +85,8 @@ Talmudic context; none is checked against Fiey. The closest to something worth a
   Karka d-Beth Slokh / Daquqa; Hoffmann Excursus 19, p. 272f.). The consonants match exactly,
   BJ leaves Qurqunya unidentified (p. 391), and BJ uses Karhini/Karhine for another entry
   (p. 380). But BJ's reading of the source puts Qurqunya on R. Zera's way to Sura, far from
-  Karkhene. Probably wrong.
+  Karkhene. Probably wrong, and **not new**: Neubauer (1868) p. 398 already proposed
+  "Kerkounah dans le pays des Kurdes".
 - **Drokart**: not new, but Hoffmann's Syriac spelling of Darauqart has a source we have not
   found. A dated Syriac attestation with context could test BJ's objection to Obermeyer.
 
@@ -147,12 +148,12 @@ confusions), and **1 is a lead**:
     Gazetteer records 1034 and 4464.
   - BJ (pp. 386–387) agrees with Rav Ashi that Qartu ≠ Qardu, but puts the Qartuans "according
     to Strabo, in southern Persia" (the Κύρτιοι). Jastrow (p. 1428) has Κόρτιοι, "mountaineers
-    of Media". Neither cites the Syriac Qarṭwāyē, and Hoffmann's note and POCN do not cite the
+    of Media"; Neubauer (1868) p. 429 has the Kurtioi, "peuplade persique". None of them cites the Syriac Qarṭwāyē, and Hoffmann's note and POCN do not cite the
     Talmud.
   - What the Syriac adds: a people called Qarṭwāyē (with ṭ; Talmudic ת = one t/ṭ confusion)
     in northern Adiabene, organised as a diocese by 585, separate from Qardu (Corduene). That
     supports Rav Ashi's distinction and points to northern Mesopotamia rather than southern Persia.
-  - **Not yet a claim.** Still to check: Obermeyer p. 133, Neubauer p. 429, Fiey *Assyrie
+  - **Not yet a claim.** Still to check: Obermeyer p. 133, Fiey *Assyrie
     chrétienne* I (Kartaw pp. 152–153, 216–217; lending only), Weissbach RE s.v. Κύρτιοι.
     Caution: Chabot p. 630 equates "Qardewayē" with the Kartawayē, which blurs the very
     distinction.
@@ -165,7 +166,7 @@ one. This is the "systematic" table the project promised; it still has gaps in B
 ## Next steps
 
 - Fiey, *Assyrie chrétienne* III (lending only) and *Sumer* 23 (1967): check the weak leads.
-- Check the Qartu lead: Obermeyer p. 133, Neubauer p. 429, Fiey *AC* I, Weissbach RE.
+- Check the Qartu lead: Obermeyer p. 133, Fiey *AC* I, Weissbach RE.
 - Complete the BJ index (more search terms, or the owner borrows BJ for an hour and reads pp. 530–546).
 - Read BJ's verdicts for the entries whose verdict is "not read" (Diskarta, Papuniya).
 - Add a place/person flag to the Hoffmann register; parse Chabot's table fully.

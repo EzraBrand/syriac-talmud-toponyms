@@ -35,7 +35,7 @@ Checked 21-Nov-2026.
 | J. M. Fiey, *Pour un Oriens Christianus Novus* (Beirut/Stuttgart 1993) | **checked (search only)**: lending scan `bwb_T5-DIB-779`; search inside works when called from the item's own archive.org page (server `ia800600`). Results in `data/fts_pocn.json`. | Sees only. Not cited in the Gazetteer records. |
 | J. M. Fiey, "Topographie chrétienne de Mahozé", *Sumer* 23 (1967) | missing | BJ relies on it for the Mahoza area (Mavrakta, Gisra do-Sabistana). |
 | J. Obermeyer (1929) | not on archive.org under that name; needed for the Qartu lead (p. 133) | BJ discusses his identifications entry by entry. |
-| Neubauer, *La géographie du Talmud* (1868) | not looked for | Cited by Chabot for Mabrakta. |
+| A. Neubauer, *La géographie du Talmud* (1868) | **have** text layer (`sources/neubauer_geographie_djvu.txt`, archive.org `lagographiedutal00neub`, public domain) | Cited by Chabot for Mabrakta. p. 398: Kerkounya = a Kerkounah in Kurdistan; p. 429: Karthoï = Kurtioi. |
 | F. Jullien, studies of the historical geography of the Persian Martyr Acts | missing | Exact titles to fix. |
 | A. H. Becker, *The Invention of the Persian Martyr Acts* (2020) | missing | Dating and nature of the Acts. |
 | J. L. Rubenstein, on the Persian Martyr Acts and the Bavli | missing | Exact titles to fix. |

@@ -53,7 +53,7 @@ Fiey. Until then a row is a *candidate*.
   matcher found **one lead: Talmudic Qartu (קרתויים, Yevamot 16a) = Syriac Qarṭwāyē**, a Kurdish
   people and diocese north of Arbela (Chabot p. 423, synod of 585; Hoffmann n. 1639; Fiey POCN
   p. 66). BJ puts the Qartuans in southern Persia (Strabo's Κύρτιοι) and cites no Syriac.
-  Not yet checked against Obermeyer, Neubauer and Fiey *Assyrie chrétienne* I, so **not a
+  Neubauer (1868) and Jastrow checked: they have only Strabo's Κύρτιοι. Not yet checked against Obermeyer p. 133 and Fiey *Assyrie chrétienne* I, so **not a
   claim yet**.
 - Coverage table for 166 toponyms: `out/coverage.csv`.
 - BJ itself is on archive.org (lending); its "search inside" works without a loan and was
